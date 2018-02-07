@@ -8,139 +8,139 @@
     <script defer src='https://use.fontawesome.com/releases/v5.0.4/js/all.js'></script>
     <!-- link to japanese google font -->
     <link href="https://fonts.googleapis.com/earlyaccess/nicomoji.css" rel="stylesheet" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
     
 </head>
 <body>
-    
-<!-- COVER PAGE WITH PROJECT TITLE -->
-<header>
-    <h1 class="title">Vaporwave</h1>
-    <h2>Album COver Builder</h2>
-</header>
+    <div class="wrapper">
+        <!-- COVER PAGE WITH PROJECT TITLE -->
+        <header>
+            <h1 class="title">Vaporwave</h1>
+            <h2>Album Cover Builder</h2>
+        </header>
 
-<div class="next-page-button">
-    <i class="fas fa-angle-down"></i>
-</div>
+        <div class="next-page-button">
+            <a><i class="fas fa-angle-down"></i></a>
+        </div>
 
-<!-- MAIN CANVAS FOR ALBUM BUILDER-->
-<div class="album-canvas">
-    <ul class="background">
-        <li><img src="./images/back-dark-clouds.png" alt=""></li>
-        <li><img src="./images/back-fractal-mountain.png" alt=""></li>
-        <li><img src="./images/back-light-clouds.png" alt=""></li>
-        <li><img src="./images/back-mountains.png" alt=""></li>
-        <li><img src="./images/back-radial-gradient.png" alt=""></li>
-        <li><img src="./images/back-stripe-stars.png" alt=""></li>
-    </ul>
-    <ul class="foreground">
-        <li><img src="./images/fore-checkered.png" alt=""></li>
-        <li><img src="./images/fore-gradient-grid.png" alt=""></li>
-        <li><img src="./images/fore-gradient.png" alt=""></li>
-        <li><img src="./images/fore-grid.png" alt=""></li>
-        <li><img src="./images/fore-japanese.png" alt=""></li>
-        <li><img src="" alt=""></li>
-    </ul>
-</div>
+        <!-- MAIN CANVAS FOR ALBUM BUILDER-->
+        <div class="album-canvas">
+            <ul class="background">
+                <li><img src="./images/back-dark-clouds.png" alt=""></li>
+                <li><img src="./images/back-fractal-mountain.png" alt=""></li>
+                <li><img src="./images/back-light-clouds.png" alt=""></li>
+                <li><img src="./images/back-mountains.png" alt=""></li>
+                <li><img src="./images/back-radial-gradient.png" alt=""></li>
+                <li><img src="./images/back-stripe-stars.png" alt=""></li>
+            </ul>
+            <ul class="foreground">
+                <li><img src="./images/fore-checkered.png" alt=""></li>
+                <li><img src="./images/fore-gradient-grid.png" alt=""></li>
+                <li><img src="./images/fore-gradient.png" alt=""></li>
+                <li><img src="./images/fore-grid.png" alt=""></li>
+                <li><img src="./images/fore-japanese.png" alt=""></li>
+                <li><img src="" alt=""></li>
+            </ul>
+        </div>
 
 
 
-<!-- CUTOMIZER TITLE TABS -->
-<div class="customizer-container">
-   
-    <div class="selector-title-container">
-        <p class="selector-title">Background/Foreground</p>
-        <p class="selector-title">Random Objects</p>
-        <p class="selector-title">Album Title Name</p>
-    </div> <!-- /.selector-title-container -->
-    
-    <div class="option-container">
-    <!-- BACKGROUND/FOREGROUND SELECTOR -->
-        <div class="option option-background">
-            <p>Swip or click on side arrows to see change your background and foreground options</p>
-            
-            <nav class="background-check">
-                <p>Next
-                    <span><i class="fas fa-angle-double-right"></i></span>
-                </p>
-            </nav>
-
-        </div><!-- /. option-background END -->
+        <!-- CUTOMIZER TITLE TABS -->
+        <div class="customizer-container">
         
-    <!-- DRAGGABLE OBJECT SELECTOR -->
-        <div class="option option-object">
-            <p>Drag any of these objects onto your cover</p>
+            <div class="selector-title-container">
+                <p class="selector-title">Background/Foreground</p>
+                <p class="selector-title">Random Objects</p>
+                <p class="selector-title">Album Title</p>
+            </div> <!-- /.selector-title-container -->
             
-            <ul class="object-gallery">
-                <li class="object">
-                    <img src="./images/object-cube.png" alt="">
-                </li>
-                <li class="object">
-                    <img src="./images/object-palm.png" alt="">
-                </li>
-                <li class="object">
-                    <img src="./images/object-sun.png" alt="">
-                </li>
-                <li class="object">
-                    <img src="./images/object-tetris.png" alt="">
-                </li>
-                <li class="object">
-                    <img src="./images/object-trapazoid.png" alt="">
-                </li>
-                <li class="object">
-                    <img src="./images/object-triangle.png" alt="">
-                </li>
-            </ul><!-- /.object-gallery    -->
-            
-            <nav class="object-check">
-                <p>Back
-                    <span><i class="fas fa-angle-double-left"></i></span>
-                </p>
-                <p>Next
-                    <span><i class="fas fa-angle-double-right"></i></span>
-                </p>
-            </nav>
+            <div class="option-container">
+            <!-- BACKGROUND/FOREGROUND SELECTOR -->
+                <div class="option option-background">
+                    <p>Swip or click on side arrows to see change your background and foreground options</p>
+                    
+                    <nav class="background-check">
+                        <p>Next
+                            <span><i class="fas fa-angle-double-right"></i></span>
+                        </p>
+                    </nav>
 
-        </div><!-- /. option-object END -->
+                </div><!-- /. option-background END -->
+                
+            <!-- DRAGGABLE OBJECT SELECTOR -->
+                <div class="option option-object">
+                    <p>Drag any of these objects onto your cover</p>
+                    
+                    <ul class="object-gallery">
+                        <li class="object">
+                            <img src="./images/object-cube.png" alt="">
+                        </li>
+                        <li class="object">
+                            <img src="./images/object-palm.png" alt="">
+                        </li>
+                        <li class="object">
+                            <img src="./images/object-sun.png" alt="">
+                        </li>
+                        <li class="object">
+                            <img src="./images/object-tetris.png" alt="">
+                        </li>
+                        <li class="object">
+                            <img src="./images/object-trapazoid.png" alt="">
+                        </li>
+                        <li class="object">
+                            <img src="./images/object-triangle.png" alt="">
+                        </li>
+                    </ul><!-- /.object-gallery    -->
+                    
+                    <nav class="object-check">
+                        <p>Back
+                            <span><i class="fas fa-angle-double-left"></i></span>
+                        </p>
+                        <p>Next
+                            <span><i class="fas fa-angle-double-right"></i></span>
+                        </p>
+                    </nav>
 
-    <!-- ALBUM TITLE SELECTOR -->
-        <div class="option option-title">
-            <form action="">
-                <p>Enter album title</p>
-                <p>or</p>
-                <p>Select random name</p>
-            </form>
+                </div><!-- /. option-object END -->
 
-            <nav class="object-check">
-                <p>Back
-                    <span><i class="fas fa-angle-double-left"></i></span>
-                </p>
-                <p>Next
-                    <span><i class="fas fa-angle-double-right"></i></span>
-                </p>
-            </nav>
-            
+            <!-- ALBUM TITLE SELECTOR -->
+                <div class="option option-title">
+                    <form action="">
+                        <p>Enter album title</p>
+                        <p>or</p>
+                        <p>Select random name</p>
+                    </form>
+
+                    <nav class="object-check">
+                        <p>Back
+                            <span><i class="fas fa-angle-double-left"></i></span>
+                        </p>
+                        <p>Next
+                            <span><i class="fas fa-angle-double-right"></i></span>
+                        </p>
+                    </nav>
+                </div>
+
+
+                <div class="option option-share">
+                    <a><i class="fab fa-twitter"></i></a>
+                    <a></a><i class="far fa-save"></i></a>
+                    <a></a><i class="fab fa-facebook-f"></i></a>
+                </div>
+
+
+            </div> <!-- /.option-container -->
+
         </div>
-
-
-        <div class="option option-share">
-            <i class="fab fa-twitter"></i>
-            <i class="far fa-save"></i>
-            <i class="fab fa-facebook-f"></i>
-        </div>
-
-
-
-    </div> <!-- /.option-container -->
-
+        <!-- /. customizer-container -->
 </div>
-<!-- /. customizer-container -->
-
-
-
-    
+<!-- /.wrapper -->
 
 
     <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
+
+    <script src="script.js"></script>
+
+
 </body>
 </html>

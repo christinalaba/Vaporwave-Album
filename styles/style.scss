@@ -1,6 +1,27 @@
 /* .wf-nicomoji { font-family: "Nico Moji"; } */
 
-/* body {
+
+@import "partials/normalize";
+
+
+body {
 	cursor: url('some-cursor.ico'), default;
-} */
+	font-family: Arial, Helvetica, sans-serif;
+} 
+
+img{
+	width: 600px;
+}
+
+.wrapper{
+    max-width: 1170px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+ul li{
+	list-style-type: none;
+}
+
+
 
