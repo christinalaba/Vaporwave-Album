@@ -6,9 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>V-wave album cover builder</title>
     <script defer src='https://use.fontawesome.com/releases/v5.0.4/js/all.js'></script>
-    <!-- link to japanese google font -->
-    <link href="https://fonts.googleapis.com/earlyaccess/nicomoji.css" rel="stylesheet" />
-    <link rel="stylesheet" href="styles/style.css">
+   
+    <link rel="stylesheet" href="./styles/style.css">
+    
+    <link rel="stylesheet" href="./styles/flickity.min.css" media="screen">
+    
     
 </head>
 <body>
@@ -26,22 +28,24 @@
         <!-- MAIN CANVAS FOR ALBUM BUILDER-->
         <div class="album-canvas">
             <ul class="background">
+                <li><img src="./images/back-radial-gradient.png" alt=""></li>
                 <li><img src="./images/back-dark-clouds.png" alt=""></li>
                 <li><img src="./images/back-fractal-mountain.png" alt=""></li>
                 <li><img src="./images/back-light-clouds.png" alt=""></li>
                 <li><img src="./images/back-mountains.png" alt=""></li>
-                <li><img src="./images/back-radial-gradient.png" alt=""></li>
                 <li><img src="./images/back-stripe-stars.png" alt=""></li>
             </ul>
             <ul class="foreground">
+                <li><img src="./images/fore-gradient.png" alt=""></li>
                 <li><img src="./images/fore-checkered.png" alt=""></li>
                 <li><img src="./images/fore-gradient-grid.png" alt=""></li>
-                <li><img src="./images/fore-gradient.png" alt=""></li>
                 <li><img src="./images/fore-grid.png" alt=""></li>
                 <li><img src="./images/fore-japanese.png" alt=""></li>
                 <li><img src="" alt=""></li>
             </ul>
+            <div class="album-title"></div>
         </div>
+
 
 
 
@@ -57,12 +61,10 @@
             <div class="option-container">
             <!-- BACKGROUND/FOREGROUND SELECTOR -->
                 <div class="option option-background">
-                    <p>Swip or click on side arrows to see change your background and foreground options</p>
+                    <p>Swipe or click on side arrows to see change your background and foreground options</p>
                     
-                    <nav class="background-check">
-                        <p>Next
-                            <span><i class="fas fa-angle-double-right"></i></span>
-                        </p>
+                    <nav class="background-nav">
+                        <button>Next <i class="fas fa-angle-double-right"></i></button>
                     </nav>
 
                 </div><!-- /. option-background END -->
@@ -93,12 +95,9 @@
                     </ul><!-- /.object-gallery    -->
                     
                     <nav class="object-check">
-                        <p>Back
-                            <span><i class="fas fa-angle-double-left"></i></span>
-                        </p>
-                        <p>Next
-                            <span><i class="fas fa-angle-double-right"></i></span>
-                        </p>
+                        <button><i class="fas fa-angle-double-left"></i> Back</button>
+
+                        <button>Next <i class="fas fa-angle-double-right"></i></button>
                     </nav>
 
                 </div><!-- /. option-object END -->
@@ -106,19 +105,29 @@
             <!-- ALBUM TITLE SELECTOR -->
                 <div class="option option-title">
                     <form action="">
-                        <p>Enter album title</p>
-                        <p>or</p>
-                        <p>Select random name</p>
+                        <label for="typed-title">Enter album title</label>
+                        <input type="text" id="typed-title" maxlength="10">
+                        <input type="submit" id="custom-title" class="generate" value="Vaporize It" maxlength="10">
                     </form>
-
+                        
+                    <p>OR</p>
+                    
+                    <p class="random-title">Select a random name for me</p>
+                    <button type="submit" id="custom-title" class="generate" value="Vaporize It">Vaporize it</button>
+                    
+                    <label for="fonts">Try some diferent fonts</label>
+                    <select id=fonts>
+                        <option value="alien">Alien</option>
+                        <option value="streamster">Streamster</option>
+                        <option value="vcr">VCR</option>
+                    </select>
+                        
                     <nav class="object-check">
-                        <p>Back
-                            <span><i class="fas fa-angle-double-left"></i></span>
-                        </p>
-                        <p>Next
-                            <span><i class="fas fa-angle-double-right"></i></span>
-                        </p>
+                        <button><i class="fas fa-angle-double-left"></i> Back</button>
+
+                        <button>Next <i class="fas fa-angle-double-right"></i></button>
                     </nav>
+
                 </div>
 
 
@@ -136,10 +145,11 @@
 </div>
 <!-- /.wrapper -->
 
+<script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
 
-    <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
+<script src="flickity.pkgd.min.js"></script>
 
-    <script src="script.js"></script>
+<script src="script.js"></script>
 
 
 </body>

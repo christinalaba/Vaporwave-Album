@@ -1,4 +1,3 @@
-/* .wf-nicomoji { font-family: "Nico Moji"; } */
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
   display: block; }
 
@@ -133,17 +132,57 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
-body {
-  cursor: url("some-cursor.ico"), default;
-  font-family: Arial, Helvetica, sans-serif; }
-
 img {
-  width: 600px; }
+  display: none; }
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #010511;
+  color: #00dcf1; }
 
 .wrapper {
   max-width: 1170px;
   width: 90%;
   margin: 0 auto; }
 
-ul li {
-  list-style-type: none; }
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  margin: 0 auto; }
+  ul li {
+    padding: 0;
+    margin: 0; }
+    ul li img {
+      display: block; }
+
+header {
+  text-align: center; }
+
+.background {
+  position: relative;
+  -webkit-box-shadow: 120px 80px 40px 20px #0ff;
+  box-shadow: 0px 0px 93px -63px #0ff; }
+
+.foreground {
+  position: relative;
+  bottom: 190px; }
+
+.background, .foreground {
+  width: 600px; }
+
+.background img, .foreground img {
+  width: 600px;
+  position: center; }
+
+.object img {
+  width: 200px; }
+
+button.flickity-prev-next-button {
+  background: none; }
+
+button.flickity-prev-next-button.next {
+  right: -50px; }
+
+button.flickity-prev-next-button.previous {
+  left: -50px; }
