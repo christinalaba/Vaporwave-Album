@@ -63,20 +63,23 @@ vaporwave.addTitle = function () {
     $('.album-title').text(`${vaporwave.name}`)
 }
 
-
 vaporwave.customTitle = function () {
     $('form').on('submit', function(e) {
         e.preventDefault();
         const customName= $('#typed-title').val()
         console.log(customName, 'custom name');
+        vaporwave.name = customName;
+        vaporwave.addTitle();
     });
+
 }
 
 vaporwave.randomTitle = function() {
-    $('.generate').on('click', function () {
+    $('#randomTitle').on('click', function () {
         let name = vaporwave.albumTitle[Math.floor(Math.random() * vaporwave.albumTitle.length)];
         vaporwave.name = name;
         console.log(vaporwave.name, 'random name');
+        vaporwave.addTitle();
     });
 }
 

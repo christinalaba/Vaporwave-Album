@@ -176,7 +176,8 @@ header {
   position: center; }
 
 .object img {
-  width: 200px; }
+  width: 200px;
+  display: none; }
 
 button.flickity-prev-next-button {
   background: none; }
