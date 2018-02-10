@@ -17,139 +17,129 @@
     <div class="wrapper">
         <!-- COVER PAGE WITH PROJECT TITLE -->
         <header>
-            <h1 class="title">Vaporwave</h1>
-            <h2>Album Cover Builder</h2>
+            <div class="cover-page">
+                <h1 class="title">Vaporwave</h1>
+                <h2>Album Cover Builder</h2>
+                
+                <a class="start-button" href="#buildScreen"></a>
+              
+            </div>
+            
         </header>
 
-        <div class="next-page-button">
-            <a><i class="fas fa-angle-down"></i></a>
-        </div>
 
         <!-- MAIN CANVAS FOR ALBUM BUILDER-->
-        <div class="album-canvas">
-            <ul class="background">
-                <li><img src="./images/back-radial-gradient.png" alt=""></li>
-                <li><img src="./images/back-dark-clouds.png" alt=""></li>
-                <li><img src="./images/back-fractal-mountain.png" alt=""></li>
-                <li><img src="./images/back-light-clouds.png" alt=""></li>
-                <li><img src="./images/back-mountains.png" alt=""></li>
-                <li><img src="./images/back-stripe-stars.png" alt=""></li>
-            </ul>
-            <ul class="foreground">
-                <li><img src="./images/fore-gradient.png" alt=""></li>
-                <li><img src="./images/fore-checkered.png" alt=""></li>
-                <li><img src="./images/fore-gradient-grid.png" alt=""></li>
-                <li><img src="./images/fore-grid.png" alt=""></li>
-                <li><img src="./images/fore-japanese.png" alt=""></li>
-                <li><img src="" alt=""></li>
-            </ul>
+        <main id="buildScreen">
+            <div class="album-canvas" >
+                <ul class="background">
+                    <li><img src="./images/back-radial-gradient.png" alt=""></li>
+                    <li><img src="./images/back-dark-clouds.png" alt=""></li>
+                    <li><img src="./images/back-fractal-mountain.png" alt=""></li>
+                    <li><img src="./images/back-light-clouds.png" alt=""></li>
+                    <li><img src="./images/back-mountains.png" alt=""></li>
+                    <li><img src="./images/back-stripe-stars.png" alt=""></li>
+                </ul>
+                <ul class="foreground">
+                    <li><img src="./images/fore-gradient.png" alt=""></li>
+                    <li><img src="./images/fore-checkered.png" alt=""></li>
+                    <li><img src="./images/fore-gradient-grid.png" alt=""></li>
+                    <li><img src="./images/fore-grid.png" alt=""></li>
+                    <li><img src="./images/fore-japanese.png" alt=""></li>
+                    <li><img src="./images/fore-japanese.png" alt=""></div></li>
+                </ul>
+            </div><!-- /.album canvas -->
+            
             <div class="album-title"></div>
-        </div>
-
+        </main>
 
 
 
         <!-- CUTOMIZER TITLE TABS -->
-        <div class="customizer-container">
-        
-            <div class="selector-title-container">
-                <p class="selector-title">Background/Foreground</p>
-                <p class="selector-title">Random Objects</p>
-                <p class="selector-title">Album Title</p>
-            </div> <!-- /.selector-title-container -->
+        <div class="accordian-container">
             
-            <div class="option-container">
             <!-- BACKGROUND/FOREGROUND SELECTOR -->
-                <div class="option option-background">
-                    <p>Swipe or click on side arrows to see change your background and foreground options</p>
-                    
-                    <nav class="background-nav">
-                        <button>Next <i class="fas fa-angle-double-right"></i></button>
-                    </nav>
-
-                </div><!-- /. option-background END -->
-                
+            <h3 class="selector-title">Background/Foreground</h3>
+            <div class="option option-background">
+                <p>Swipe or click on side arrows to see change your background and foreground options</p>
+            </div><!-- /. option-background END -->
+            
             <!-- DRAGGABLE OBJECT SELECTOR -->
-                <div class="option option-object">
-                    <p>Drag any of these objects onto your cover</p>
-                    
-                    <ul class="object-gallery">
-                        <li class="object">
-                            <img src="./images/object-cube.png" alt="">
-                        </li>
-                        <li class="object">
-                            <img src="./images/object-palm.png" alt="">
-                        </li>
-                        <li class="object">
-                            <img src="./images/object-sun.png" alt="">
-                        </li>
-                        <li class="object">
-                            <img src="./images/object-tetris.png" alt="">
-                        </li>
-                        <li class="object">
-                            <img src="./images/object-trapazoid.png" alt="">
-                        </li>
-                        <li class="object">
-                            <img src="./images/object-triangle.png" alt="">
-                        </li>
-                    </ul><!-- /.object-gallery    -->
-                    
-                    <nav class="object-check">
-                        <button><i class="fas fa-angle-double-left"></i> Back</button>
-
-                        <button>Next <i class="fas fa-angle-double-right"></i></button>
-                    </nav>
-
-                </div><!-- /. option-object END -->
-
+            <h3 class="selector-title">Random Objects</h3>
+            <div class="option option-object">
+                <p>Drag any of these objects onto your cover</p>
+                
+                <ul class="object-gallery">
+                    <li class="object">
+                        <img src="./images/object-cube.png" alt="">
+                    </li>
+                    <li class="object">
+                        <img src="./images/object-palm.png" alt="">
+                    </li>
+                    <li class="object">
+                        <img src="./images/object-sun.png" alt="">
+                    </li>
+                    <li class="object">
+                        <img src="./images/object-tetris.png" alt="">
+                    </li>
+                    <li class="object">
+                        <img src="./images/object-trapazoid.png" alt="">
+                    </li>
+                    <li class="object">
+                        <img src="./images/object-triangle.png" alt="">
+                    </li>
+                </ul><!-- /.object-gallery    -->
+            
+            </div><!-- /. option-object END -->
+            
             <!-- ALBUM TITLE SELECTOR -->
-                <div class="option option-title">
-                    <form action="">
-                        <label for="typed-title">Enter album title</label>
-                        <input type="text" id="typed-title" maxlength="10">
-                        <input type="submit" id="custom-title" class="generate" value="Vaporize It" maxlength="10">
-                    </form>
+            
+            <h3 class="selector-title">Album Title</h3>
+            <div class="option option-title">
+                <form action="">
+                    <label for="typed-title">Enter album title</label>
+                    <input type="text" id="typed-title" maxlength="10">
+                    <input type="submit" id="custom-title" class="generate" value="Vaporize It" maxlength="10">
+                </form>
                         
-                    <p>OR</p>
+                <p>OR</p>
                     
-                    <p class="random-title">Select a random name for me</p>
-                    <button type="submit" id="randomTitle" class="generate" value="Vaporize It">Vaporize it</button>
+                <p class="random-title">Select a random name for me</p>
+                <button type="submit" id="randomTitle" class="generate" value="Vaporize It">Vaporize it</button>
                     
-                    <label for="fonts">Try some diferent fonts</label>
-                    <select id=fonts>
-                        <option value="alien">Alien</option>
-                        <option value="streamster">Streamster</option>
-                        <option value="vcr">VCR</option>
-                    </select>
-                        
-                    <nav class="object-check">
-                        <button><i class="fas fa-angle-double-left"></i> Back</button>
-
-                        <button>Next <i class="fas fa-angle-double-right"></i></button>
-                    </nav>
-
-                </div>
-
-
-                <div class="option option-share">
-                    <a><i class="fab fa-twitter"></i></a>
-                    <a></a><i class="far fa-save"></i></a>
-                    <a></a><i class="fab fa-facebook-f"></i></a>
-                </div>
+                <label for="fonts">Try some diferent fonts</label>
+                <select id=fonts>
+                    <option value="alien" class="alien">Alien</option>
+                    <option value="streamster" class="streamster">Streamster</option>
+                    <option value="vcr" class="vcr">VCR</option>
+                </select>
+            </div>
+            
+            <!-- SHARE SELECTOR -->
+            <h3>Share the love:</h3>
+            <div class="option option-share">
+                <a><i class="fab fa-twitter"></i></a>
+                <a></a><i class="far fa-save"></i></a>
+                <a></a><i class="fab fa-facebook-f"></i></a>
+            </div>
 
 
             </div> <!-- /.option-container -->
 
         </div>
         <!-- /. customizer-container -->
+    
 </div>
 <!-- /.wrapper -->
 
 <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
 
-<script src="flickity.pkgd.min.js"></script>
+<script src="./js/flickity.pkgd.min.js"></script>
 
-<script src="script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.1.2/jquery.smooth-scroll.min.js"></script>
+
+<script src="./js/script.js"></script>
+
+<!-- <script src="./js/jquery.js"></script> -->
 
 
 </body>

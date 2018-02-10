@@ -1,0 +1,28 @@
+header{
+    height: 100vh;
+    text-align: center;
+    position: relative;
+}
+
+.cover-page{
+    position: absolute;
+    left:50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.start-button{
+    text-align: center;
+    position: absolute;
+    bottom: -180%;
+    font-size: 32px;
+    border-right: 1px solid $accent;
+    border-bottom: 1px solid $accent;
+    height: 16px;
+    width: 16px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}

@@ -1,18 +1,37 @@
-// .wf-nicomoji { font-family: "Nico Moji"; } 
-// cursor: url('./cursor.png'), default;
+ // 
+
+$accent: #0ff;
+$background:#010511;
+
+@font-face {
+  font-family: 'alien';
+  src: url('../fonts/alien.ttf')  format('truetype');  
+}
+
+@font-face {
+  font-family: 'vcr'; 
+  src: url('../fonts/vcr.ttf')  format('truetype');  
+}
+
+@font-face {
+  font-family: 'streamster'; 
+  src: url('../fonts/streamster.ttf')  format('truetype');  
+}
 
 
 @import "partials/normalize";
+@import "partials/header";
+@import "partials/background";
+@import "partials/draggable";
+@import "partials/albumTitle";
 
-
-img{
-	display: none;
-}
 
 body {
 	font-family: Arial, Helvetica, sans-serif;
-	background: #010511;
-	color: #00dcf1;
+	background:$background;
+	color: $accent;
+	font-size: 62.5%;
+	font-size: 1.2rem;
 } 
 
 .wrapper{
@@ -26,58 +45,10 @@ ul {
 	padding: 0;
 	margin: 0;
 	list-style-type: none;
-	margin: 0 auto;
 	li{
-		padding: 0;
-		margin: 0;
 		img{
 			display: block;
 		}		
 		
 	}
 }
-
-header{
-	text-align: center
-}
-
-.background{
-	position: relative;
-    -webkit-box-shadow: 120px 80px 40px 20px #0ff;
-    box-shadow: 0px 0px 93px -63px #0ff;
-}
-
-.foreground{
-	position: relative;
-	bottom: 190px;
-}
-
-.background, .foreground{
-	width: 600px;
-}
-
-.background img, .foreground img{
-	width: 600px;
-	position: center;
-
-}
-
-.object img{
-	width: 200px;
-	display: none;
-}	
-	
-button.flickity-prev-next-button {
-  background: none;
-  
-}
-
-button.flickity-prev-next-button.next{
-	right: -50px;
-
-}
-
-button.flickity-prev-next-button.previous{
-	left: -50px;
-}
-    

@@ -1,3 +1,15 @@
+@font-face {
+  font-family: 'alien';
+  src: url("../fonts/alien.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'vcr';
+  src: url("../fonts/vcr.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'streamster';
+  src: url("../fonts/streamster.ttf") format("truetype"); }
+
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
   display: block; }
 
@@ -132,32 +144,37 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
-img {
-  display: none; }
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  background: #010511;
-  color: #00dcf1; }
-
-.wrapper {
-  max-width: 1170px;
-  width: 90%;
-  margin: 0 auto; }
-
-ul {
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-  margin: 0 auto; }
-  ul li {
-    padding: 0;
-    margin: 0; }
-    ul li img {
-      display: block; }
-
 header {
-  text-align: center; }
+  height: 100vh;
+  text-align: center;
+  position: relative; }
+
+.cover-page {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+
+.start-button {
+  text-align: center;
+  position: absolute;
+  bottom: -180%;
+  font-size: 32px;
+  border-right: 1px solid #0ff;
+  border-bottom: 1px solid #0ff;
+  height: 16px;
+  width: 16px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg); }
+
+main {
+  height: 100vh;
+  padding: 50px 0; }
 
 .background {
   position: relative;
@@ -169,11 +186,15 @@ header {
   bottom: 190px; }
 
 .background, .foreground {
-  width: 600px; }
+  max-width: 600px; }
 
 .background img, .foreground img {
-  width: 600px;
+  max-width: 600px;
   position: center; }
+
+.blank-image {
+  max-width: 600px;
+  height: 10px; }
 
 .object img {
   width: 200px;
@@ -186,4 +207,29 @@ button.flickity-prev-next-button.next {
   right: -50px; }
 
 button.flickity-prev-next-button.previous {
-  left: -50px; }
+  display: none; }
+
+.album-title {
+  font-size: 5rem; }
+
+h3 {
+  font-family: 'alien'; }
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #010511;
+  color: #0ff;
+  font-size: 62.5%;
+  font-size: 1.2rem; }
+
+.wrapper {
+  max-width: 1170px;
+  width: 90%;
+  margin: 0 auto; }
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none; }
+  ul li img {
+    display: block; }
