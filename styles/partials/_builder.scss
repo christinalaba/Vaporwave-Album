@@ -1,0 +1,105 @@
+#buildScreen{
+	height: 100vh;
+padding: 150px 0 0 0;
+}
+
+.album-canvas {
+	height: 250px;
+}
+
+.background{
+	position: relative;
+    -webkit-box-shadow: 120px 80px 40px 20px $accent;
+    box-shadow: 0px 0px 93px -63px $accent;
+}
+
+.foreground{
+	position: relative;
+	bottom: 190px;
+}
+
+.background, .foreground{
+	max-width: 600px;
+}
+
+.background img, .foreground img,{
+	max-width: 600px;
+}
+
+.blank-image{
+	max-width: 600px;
+	height: 10px;
+}	
+	
+button.flickity-prev-next-button {
+  background: none;
+}
+
+button.flickity-prev-next-button.next{
+	right: -50px;
+}
+
+button.flickity-prev-next-button.previous{
+	display: none;
+}
+
+.album-title{
+	font-size: 6rem;
+}
+
+main{
+	width: 70%;
+	float: left;
+}
+
+aside{
+	width: 20%;
+	float: left;
+}
+
+h3{
+	text-align: left;
+	padding: 0;
+}
+
+
+// DRAGGABLE OPTION
+.thumbnail{
+	img{
+		width: 50px;
+		cursor: crosshair;
+	}
+}
+
+
+.object {
+	display: none;
+}
+
+.object img{
+	width: 200px; 
+}
+
+.object-gallery{
+	li{
+		float: left;
+	}
+}
+
+.visible{
+	display: block;
+}
+
+.object-thumbnails{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
+// footer
+footer{
+	text-align: right;
+	padding-right: 25px;
+	font-size: 1rem;
+	margin-top: 100px;
+}

@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="./styles/style.css">
     
     <link rel="stylesheet" href="./styles/flickity.min.css" media="screen">
+    <link rel="stylesheet" href="./styles/jquery-ui.structure.css">
+    <link rel="stylesheet" href="./styles/jquery-ui.css">
+    <link rel="stylesheet" href="./styles/jquery-ui.theme.css">
     
     
 </head>
@@ -20,16 +23,16 @@
             <div class="cover-page">
                 <h1 class="title">Vaporwave</h1>
                 <h2>Album Cover Builder</h2>
-                
                 <a class="start-button" href="#buildScreen"></a>
-              
             </div>
             
         </header>
 
 
         <!-- MAIN CANVAS FOR ALBUM BUILDER-->
-        <main id="buildScreen">
+    <div id="buildScreen" class="main-screen clearfix">
+        
+        <main class="main-screen">
             <div class="album-canvas" >
                 <ul class="background">
                     <li><img src="./images/back-radial-gradient.png" alt=""></li>
@@ -45,49 +48,43 @@
                     <li><img src="./images/fore-gradient-grid.png" alt=""></li>
                     <li><img src="./images/fore-grid.png" alt=""></li>
                     <li><img src="./images/fore-japanese.png" alt=""></li>
-                    <li><img src="./images/fore-japanese.png" alt=""></div></li>
+                    <li><img src="./images/fore-japanese.png" alt=""></li>
                 </ul>
             </div><!-- /.album canvas -->
-            
-            <div class="album-title"></div>
+            <div class="albumtitle object"></div>
+            <ul id="draggable" class="object-gallery">
+                <li class="object objectcube"><img src="./images/object-cube.png" alt=""></li>
+                <li class="object objectpalm"><img src="./images/object-palm.png" alt=""></li>
+                <li class="object objectsun"><img src="./images/object-sun.png" alt=""></li>
+                <li class="object objecttetris"><img src="./images/object-tetris.png" alt=""></li>
+                <li class="object objecttrap"><img src="./images/object-trapazoid.png" alt=""></li>
+                <li class="object objecttriangle"><img src="./images/object-triangle.png" alt=""></li>
+            </ul><!-- /.object-gallery -->
         </main>
 
-
+       
 
         <!-- CUTOMIZER TITLE TABS -->
-        <div class="accordian-container">
-            
+        <aside>
+        <div id="accordion">
             <!-- BACKGROUND/FOREGROUND SELECTOR -->
-            <h3 class="selector-title">Background/Foreground</h3>
+            <h3 class="option selector-title">Background/Foreground</h3>
             <div class="option option-background">
-                <p>Swipe or click on side arrows to see change your background and foreground options</p>
+                <p>Swipe or click on side arrows to change your background and foreground</p>
             </div><!-- /. option-background END -->
             
             <!-- DRAGGABLE OBJECT SELECTOR -->
-            <h3 class="selector-title">Random Objects</h3>
+            <h3 class="option selector-title">Random Objects</h3>
             <div class="option option-object">
-                <p>Drag any of these objects onto your cover</p>
-                
-                <ul class="object-gallery">
-                    <li class="object">
-                        <img src="./images/object-cube.png" alt="">
-                    </li>
-                    <li class="object">
-                        <img src="./images/object-palm.png" alt="">
-                    </li>
-                    <li class="object">
-                        <img src="./images/object-sun.png" alt="">
-                    </li>
-                    <li class="object">
-                        <img src="./images/object-tetris.png" alt="">
-                    </li>
-                    <li class="object">
-                        <img src="./images/object-trapazoid.png" alt="">
-                    </li>
-                    <li class="object">
-                        <img src="./images/object-triangle.png" alt="">
-                    </li>
-                </ul><!-- /.object-gallery    -->
+                <p>Click any of these objects to add it to your cover. Drag to place.</p>
+                <ul class="object-thumbnails">
+                    <li class="thumbnail thumbnailcube"><img src="./images/object-cube.png" alt=""></li>
+                    <li class="thumbnail thumbnailpalm"><img src="./images/object-palm.png" alt=""></li>
+                    <li class="thumbnail thumbnailsun"><img src="./images/object-sun.png" alt=""></li>
+                    <li class="thumbnail thumbnailtetris"><img src="./images/object-tetris.png" alt=""></li>
+                    <li class="thumbnail thumbnailtrap"><img src="./images/object-trapazoid.png" alt=""></li>
+                    <li class="thumbnail thumbnailtriangle"><img src="./images/object-triangle.png" alt=""></li>
+                </ul><!-- /.object-gallery -->
             
             </div><!-- /. option-object END -->
             
@@ -118,28 +115,30 @@
             <h3>Share the love:</h3>
             <div class="option option-share">
                 <a><i class="fab fa-twitter"></i></a>
-                <a></a><i class="far fa-save"></i></a>
-                <a></a><i class="fab fa-facebook-f"></i></a>
+                <a><i class="far fa-save"></i></a>
+                <a><i class="fab fa-facebook-f"></i></a>
             </div>
-
-
             </div> <!-- /.option-container -->
 
-        </div>
-        <!-- /. customizer-container -->
+        </div><!-- /. accordion -->
+    </aside>
     
-</div>
-<!-- /.wrapper -->
+    
 
-<script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
+    </div>
+    </div><!-- /.wrapper -->
 
-<script src="./js/flickity.pkgd.min.js"></script>
+    <footer>
+        <p>Christina Laba</p>
+    </footer>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.1.2/jquery.smooth-scroll.min.js"></script>
-
-<script src="./js/script.js"></script>
-
-<!-- <script src="./js/jquery.js"></script> -->
+    
+    <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
+    <script src="./js/flickity.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.1.2/jquery.smooth-scroll.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/jquery-ui.js"></script>
 
 
 </body>
