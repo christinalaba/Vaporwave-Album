@@ -27,6 +27,7 @@ vaporwave.jQPlugs = function () {
         $(".object").draggable();
         snap: true
         });
+
 }
 
 
@@ -65,7 +66,7 @@ vaporwave.customTitle = function () {
 }
 
 vaporwave.addTitle = function () {
-    $('.albumtitle').text(`${vaporwave.name}`)
+    $('.albumTitle').text(`${vaporwave.name}`)
     console.log('added')
 }
 
@@ -78,17 +79,17 @@ vaporwave.fontChange = function (){
 
 vaporwave.applyFont = function (){
     if (vaporwave.font === 'vcr'){
-        $(".album-title").css({ 
+        $(".albumTitle").css({ 
             "font-family": "vcr", 
             "transform": "rotate(-90deg)", 
             "font-size": "4rem" });
     } else if (vaporwave.font === 'streamster'){
-        $(".album-title").css({ 
+        $(".albumTitle").css({ 
             "font-family": "streamster", 
             "transform": "rotate(-20deg)", 
             "font-size": "7rem"});
     }else {
-        $(".album-title").css({ 
+        $(".albumTitle").css({ 
             "font-family": "alien", 
             "transform": "rotate(0deg)", 
             "font-size": "5rem"});

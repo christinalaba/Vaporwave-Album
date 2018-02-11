@@ -176,7 +176,7 @@ header {
   padding: 150px 0 0 0; }
 
 .album-canvas {
-  height: 250px; }
+  height: 650px; }
 
 .background {
   position: relative;
@@ -207,7 +207,8 @@ button.flickity-prev-next-button.previous {
   display: none; }
 
 .album-title {
-  font-size: 6rem; }
+  font-size: 6rem;
+  z-index: 9; }
 
 main {
   width: 70%;
@@ -225,7 +226,7 @@ h3 {
   width: 50px;
   cursor: crosshair; }
 
-.object {
+.randomobject {
   display: none; }
 
 .object img {
