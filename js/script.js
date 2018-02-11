@@ -17,20 +17,6 @@ vaporwave.smoothscroll =function () {
     
 }
 
-vaporwave.jQPlugs = function () {
-    $(function () {
-        $("#accordion").accordion({
-            heightStyle: "content",
-            collapsible: true
-        });
-
-        $(".object").draggable();
-        snap: true
-        });
-
-}
-
-
 vaporwave.albumTitle = [
     'R4ve',
     'VHS Glitch',
@@ -67,7 +53,6 @@ vaporwave.customTitle = function () {
 
 vaporwave.addTitle = function () {
     $('.albumTitle').text(`${vaporwave.name}`)
-    console.log('added')
 }
 
 vaporwave.fontChange = function (){
@@ -122,6 +107,25 @@ vaporwave.addObjects = function (){
     });
 }
 
+vaporwave.toggleArrows = function () {
+    $('.backgroundTitle').on('click', function () {
+        $('button.flickity-prev-next-button.next').toggleClass('opacity');     
+    });
+}
+
+
+
+vaporwave.jQPlugs = function () {
+    $(function () {
+        $("#accordion").accordion({
+            heightStyle: "content",
+            collapsible: true
+        });
+
+        $(".object").draggable();
+        snap: true
+    });
+}
 
 vaporwave.initialize = function(){
     vaporwave.smoothscroll();
@@ -132,6 +136,7 @@ vaporwave.initialize = function(){
     vaporwave.fontChange();
     vaporwave.jQPlugs();
     vaporwave.addObjects();
+    vaporwave.toggleArrows();
 }
 
 $(vaporwave.initialize());

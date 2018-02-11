@@ -1,11 +1,4 @@
-#buildScreen{
-	height: 100vh;
-padding: 150px 0 0 0;
-}
-
-.album-canvas {
-	height: 650px;
-}
+// BACKGROUND OPTION
 
 .background{
 	position: relative;
@@ -37,30 +30,22 @@ button.flickity-prev-next-button {
 
 button.flickity-prev-next-button.next{
 	right: -50px;
+	transition: all 1s;
 }
 
 button.flickity-prev-next-button.previous{
 	display: none;
 }
 
-.album-title{
+.opacity{
+	visibility: hidden;
+	opacity: 0;
+}
+
+
+.albumTitle{
 	font-size: 6rem;
-	z-index: 9;
-}
-
-main{
-	width: 70%;
-	float: left;
-}
-
-aside{
-	width: 20%;
-	float: left;
-}
-
-h3{
-	text-align: left;
-	padding: 0;
+	z-index: 99;
 }
 
 
@@ -71,7 +56,6 @@ h3{
 		cursor: crosshair;
 	}
 }
-
 
 .randomobject{
 	display: none;
@@ -95,6 +79,11 @@ h3{
 	display: flex;
 	flex-wrap: wrap;
 }
+
+
+// ALBUM TITLE OPTION
+
+
 
 
 // footer
