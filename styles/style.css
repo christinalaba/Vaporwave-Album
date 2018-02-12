@@ -362,7 +362,9 @@ button.flickity-prev-next-button.previous {
   font-size: 6rem;
   z-index: 99;
   position: absolute;
-  cursor: move; }
+  cursor: move;
+  bottom: -400px;
+  left: 200px; }
 
 .thumbnail img {
   width: 80px;
@@ -375,7 +377,9 @@ button.flickity-prev-next-button.previous {
 .object img {
   width: 250px;
   position: absolute;
-  cursor: move; }
+  cursor: move;
+  top: -476px;
+  left: 30px; }
 
 .object-gallery li {
   float: left; }
@@ -453,7 +457,6 @@ footer {
   margin-top: 100px;
   clear: both;
   color: #287b8b;
-  background: #010511;
   -webkit-box-shadow: 120px 80px 40px 20px #0ff;
   box-shadow: 0px 0px 93px -63px #0ff; }
 
@@ -472,7 +475,7 @@ footer {
   .album-canvas {
     height: 450px; }
   footer {
-    margin-top: 245px; }
+    margin-top: 500px; }
   .object img {
     width: 150px;
     position: absolute;
@@ -502,6 +505,6 @@ footer {
     width: 40px;
     margin: 0 5px; }
   footer {
-    margin-top: 245px; }
+    margin-top: 350px; }
   .albumTitle {
     left: 100px; } }

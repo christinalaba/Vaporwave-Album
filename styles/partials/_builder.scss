@@ -58,6 +58,8 @@ button.flickity-prev-next-button.previous{
 	z-index: 99;
 	position: absolute;
 	cursor: move;
+	bottom: -400px;
+	left: 200px;
 }
 
 
@@ -78,6 +80,8 @@ button.flickity-prev-next-button.previous{
 	width: 250px; 
 	position: absolute;
 	cursor: move;
+	top: -476px;
+	left: 30px;
 }
 
 .object-gallery{
@@ -175,7 +179,6 @@ footer{
 	margin-top: 100px;
 	clear: both;
 	color: #287b8b;
-	background: $background;
 	  -webkit-box-shadow: 120px 80px 40px 20px $accent;
     box-shadow: 0px 0px 93px -63px $accent;
 }
