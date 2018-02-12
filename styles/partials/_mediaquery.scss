@@ -1,0 +1,88 @@
+@media (max-width:1050px){
+    aside, main{
+        float: none;
+        width: 100%;
+    }
+    .foreground{
+        position: relative;
+        bottom: 128px;
+    }
+
+    .background, .foreground{
+        width: 400px;
+        margin: 0 auto;
+    }
+
+    .background img, .foreground img,{
+        width: 400px;
+    }
+
+    .album-canvas {
+    height: 450px;
+    }
+    footer{
+        margin-top: 245px;
+    }
+
+    
+
+    .object img {
+        width: 150px;
+        position: absolute;
+        top: -268px;
+        left: 107px;
+    }
+
+    .albumTitle{
+        font-size: 2rem;
+        left: 400px;
+        bottom: -267px;
+    }
+
+
+}
+
+
+@media (max-width:545px){
+    
+    h1{
+        font-size: 3.5rem;
+    }
+    h2{
+        font-size: 2rem
+    }
+
+    .foreground{
+        position: relative;
+        bottom: 94px;
+    }
+
+    .background, .foreground{
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    .background img, .foreground img,{
+        width: 300px;
+    }
+
+    .album-canvas {
+    height: 350px;
+    }
+
+    li.thumbnail{
+        img{
+            width: 40px;
+            margin: 0 5px;
+        }
+    }
+
+    footer{
+        margin-top: 245px;
+    }
+
+    .albumTitle{
+        left: 100px;
+    }
+
+}

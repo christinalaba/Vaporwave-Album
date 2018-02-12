@@ -27,7 +27,7 @@ vaporwave.albumTitle = [
     'Lisa 1983',
     'chime boot',
     'code.js',
-    'AcidDac',
+    'wav IPA',
     'iNitialize',
     'AESTHETIC'
 ]
@@ -82,8 +82,8 @@ vaporwave.applyFont = function (){
 }
 
 vaporwave.addObjects = function (){
-    $('.thumbnailcube').on('click', function(){
-        $('.objectcube').toggleClass('visible');
+    $('.thumbnailbust').on('click', function(){
+        $('.objectbust').toggleClass('visible');
     });
 
     $('.thumbnailpalm').on('click', function (){
@@ -98,12 +98,12 @@ vaporwave.addObjects = function (){
         $('.objecttetris').toggleClass('visible');
     });
 
-    $('.thumbnailtrap').on('click', function () {
-        $('.objecttrap').toggleClass('visible');
+    $('.thumbnailbart').on('click', function () {
+        $('.objectbart').toggleClass('visible');
     });
     
-    $('.thumbnailtriangle').on('click', function () {
-        $('.objecttriangle').toggleClass('visible');
+    $('.thumbnailtesla').on('click', function () {
+        $('.objecttesla').toggleClass('visible');
     });
 }
 
@@ -112,8 +112,6 @@ vaporwave.toggleArrows = function () {
         $('button.flickity-prev-next-button.next').toggleClass('opacity');     
     });
 }
-
-
 
 vaporwave.jQPlugs = function () {
     $(function () {
@@ -124,7 +122,7 @@ vaporwave.jQPlugs = function () {
 
         $(".object").draggable();
         snap: true
-    });
+        });
 }
 
 vaporwave.initialize = function(){

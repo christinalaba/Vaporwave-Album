@@ -1,3 +1,18 @@
+.accordion p, label{
+	line-height: 2.2rem;
+	word-spacing: 5px;
+	color: #287b8b;
+	margin: 0;
+}
+
+.accordian h3{
+	border-bottom: 1px solid;
+}
+
+.ui-accordion .ui-accordion-header:hover {
+	color: $pink;
+}
+
 // BACKGROUND OPTION
 
 .background{
@@ -12,17 +27,12 @@
 }
 
 .background, .foreground{
-	max-width: 600px;
+	width: 600px;
 }
 
 .background img, .foreground img,{
-	max-width: 600px;
+	width: 600px;
 }
-
-.blank-image{
-	max-width: 600px;
-	height: 10px;
-}	
 	
 button.flickity-prev-next-button {
   background: none;
@@ -46,14 +56,17 @@ button.flickity-prev-next-button.previous{
 .albumTitle{
 	font-size: 6rem;
 	z-index: 99;
+	position: absolute;
+	cursor: move;
 }
 
 
 // DRAGGABLE OPTION
 .thumbnail{
 	img{
-		width: 50px;
+		width: 80px;
 		cursor: crosshair;
+		margin: 0 10px;
 	}
 }
 
@@ -62,7 +75,9 @@ button.flickity-prev-next-button.previous{
 }
 
 .object img{
-	width: 200px; 
+	width: 250px; 
+	position: absolute;
+	cursor: move;
 }
 
 .object-gallery{
@@ -83,8 +98,74 @@ button.flickity-prev-next-button.previous{
 
 // ALBUM TITLE OPTION
 
+button, input, select, textarea {
+	width: 45%;
+	height: 40px;
+	background-color: $background;
+	color: $accent;
+	border: 1px solid $accent;
+	border-radius: 25px;
+	padding: 0 18px;
+}
+
+.typed-label{
+	float: left;
+}
+
+#typed-title{
+	width: 150px;
+	margin-left: 5px;
+	float: left;
+	margin-bottom: 10px;
+}
+
+#randomTitle{
+	margin-bottom: 20px;
+}
+
+#custom-title, #randomTitle{
+	width: 70%;
+	background: $accent;
+	color: $background;
+	display: block;
+	margin: 0 auto;
+}
+
+.option-title {
+	span{
+	text-align: center;
+	display: block;
+	margin: 20px 0;
+	}
+}
+
+.random-title{
+	text-align: center;
+}
+
+select{
+	width: 210px;
+	 -webkit-appearance: none;
+	 background: $accent;
+	color: $background;
+	margin: 0 auto;
+    display: block;
+	option{
+		font-size: 2rem;
+	}
+}
+
+.font-select{
+	text-align: center;
+    margin-top: 20px;
+    display: block;
+}
 
 
+// SHARE
+.option-share{
+	display: flex;
+}
 
 // footer
 footer{
@@ -92,4 +173,9 @@ footer{
 	padding-right: 25px;
 	font-size: 1rem;
 	margin-top: 100px;
+	clear: both;
+	color: #287b8b;
+	background: $background;
+	  -webkit-box-shadow: 120px 80px 40px 20px $accent;
+    box-shadow: 0px 0px 93px -63px $accent;
 }
