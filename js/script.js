@@ -73,13 +73,21 @@ vaporwave.applyFont = function (){
             "font-family": "streamster", 
             "transform": "rotate(-20deg)", 
             "font-size": "7rem"});
+    } else if (vaporwave.font === 'Default'){
+        console.log('defaaulty')
+        $(".albumTitle").css({ 
+            "font-family": 'Lato', 
+            "transform": "rotate(0deg)", 
+            "font-size": "5rem"});
     }else {
         $(".albumTitle").css({ 
             "font-family": "alien", 
             "transform": "rotate(0deg)", 
             "font-size": "5rem"});
-    };
+    }
 }
+
+//font-family: 'Lato'
 
 vaporwave.addObjects = function (){
     $('.thumbnailbust').on('click', function(){
@@ -109,7 +117,11 @@ vaporwave.addObjects = function (){
 
 vaporwave.toggleArrows = function () {
     $('.backgroundTitle').on('click', function () {
-        $('button.flickity-prev-next-button.next').toggleClass('opacity');     
+        $('button.flickity-prev-next-button.next').removeClass('opacity');     
+    });
+
+    $('.draggableTitle').on('click', function () {
+        $('button.flickity-prev-next-button.next').addClass('opacity');
     });
 }
 

@@ -505,6 +505,7 @@ footer {
     width: 40px;
     margin: 0 5px; }
   footer {
-    margin-top: 350px; }
+    margin-top: 550px; }
   .albumTitle {
-    left: 100px; } }
+    left: 100px;
+    font-size: 1rem; } }

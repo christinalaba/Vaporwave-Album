@@ -1,17 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114038599-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-114038599-1');
+    </script>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>V-wave album cover builder</title>
+    <title>Vaporwave album cover builder</title>
     <script defer src='https://use.fontawesome.com/releases/v5.0.4/js/all.js'></script>
    
     <link rel="stylesheet" href="./styles/style.css">
     
     <link rel="stylesheet" href="./styles/flickity.min.css" media="screen">
     <link rel="stylesheet" href="./styles/jquery-ui.structure.css">
-    <link href="https://fonts.googleapis.com/css?family=Exo:400,900|Lato:300" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css?family=Exo:400,900|Lato:300" rel="stylesheet">  
+    <meta property="og:image" content="http://vapor-art.com/images/sample.png"/>
+   
+  
     
 </head>
 <body>
@@ -75,9 +88,9 @@
                 </div><!-- /. option-background END -->
                 
                 <!-- DRAGGABLE OBJECT SELECTOR -->
-                <h3 class="option selector-title">Random Objects</h3>
+                <h3 class="option selector-title draggableTitle">Random Objects</h3>
                 <div class="option option-object">
-                    <p>Click on any object to add it to your cover. Drag to place.</p>
+                    <p>Click to add or remove any object to your canvas. Drag to place.</p>
                     <ul class="object-thumbnails">
                         <li class="thumbnail thumbnailbust"><img src="./images/object-bust.png" alt=""></li>
                         <li class="thumbnail thumbnailpalm"><img src="./images/object-palm.png" alt=""></li>
@@ -93,25 +106,33 @@
                 
                 <h3 class="selector-title">Album Title</h3>
                 <div class="option option-title">
-                    <form action="" class="clearfix">
-                        <label for="typed-title" class="typed-label">Enter album title:</label>
-                        <input type="text" id="typed-title" maxlength="10"> 
-                        <input type="submit" id="custom-title" class="generate" value="Vaporize It" maxlength="10">
-                    </form>
+                    
+                    <p class="random-title">Select a random name for me:</p>
+                    <button type="submit" id="randomTitle" class="generate" value="Vaporize It">Vaporize it</button>
                             
                     <span>OR</span>
                         
-                    <p class="random-title">Select a random name for me:</p>
-                    <button type="submit" id="randomTitle" class="generate" value="Vaporize It">Vaporize it</button>
+                    <form action="" class="clearfix">
+                        <label for="typed-title" class="typed-label">Enter album title:</label>
+                        <input type="text" id="typed-title" maxlength="10">
+                        <input type="submit" id="custom-title" class="generate" value="Vaporize It" maxlength="10">
+                    </form>
                         
+                   
+                </div>
+
+                <h3 class="selector-fonts">Fonts</h3>
+                <div class="font-selector">
                     <label for="fonts" class="font-select">Try some diferent fonts:</label>
                     <select id=fonts>
+                        <option value="default" class="default">Default</option>
                         <option value="alien" class="alien">Alien</option>
                         <option value="streamster" class="streamster">Streamster</option>
                         <option value="vcr" class="vcr">VCR</option>
                     </select>
                 </div>
-                
+
+
                 <!-- SHARE SELECTOR -->
                 <h3>Share</h3>
                 <div class="option option-share">
@@ -139,7 +160,7 @@
     <script src="./js/script.js"></script>
     <script src="./js/jquery.js"></script>
     <script src="./js/jquery-ui.js"></script>
-    <script src="jquery.ui.touch-punch.min.js"></script>
+
    
 
 
