@@ -73,15 +73,15 @@ vaporwave.applyFont = function (){
             "font-family": "streamster", 
             "transform": "rotate(-20deg)", 
             "font-size": "7rem"});
-    } else if (vaporwave.font === 'Default'){
+    } else if (vaporwave.font === 'alien'){
+        $(".albumTitle").css({ 
+            "font-family": "alien", 
+            "transform": "rotate(0deg)", 
+            "font-size": "5rem"});
+    } else {
         console.log('defaaulty')
         $(".albumTitle").css({ 
             "font-family": 'Lato', 
-            "transform": "rotate(0deg)", 
-            "font-size": "5rem"});
-    }else {
-        $(".albumTitle").css({ 
-            "font-family": "alien", 
             "transform": "rotate(0deg)", 
             "font-size": "5rem"});
     }
