@@ -15,6 +15,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Vaporwave album cover builder</title>
+    <link rel="icon" type="image/png" href="./images/vwavefav.png" />
     <script defer src='https://use.fontawesome.com/releases/v5.0.4/js/all.js'></script>
    
     <link rel="stylesheet" href="./styles/style.css">
@@ -63,17 +64,17 @@
                     <li><img src="./images/fore-japanese.png" alt=""></li>
                     <li><img src="./images/fore-fade.png" alt=""></li>
                 </ul>
+                <div class="albumTitle object"></div>
+                <ul id="draggable" class="object-gallery">
+                    <li class="object objectsun randomobject"><img src="./images/object-sun.png" alt=""></li>
+                    <li class="object objectbust randomobject"><img src="./images/object-bust.png" alt=""></li>
+                    <li class="object objectpalm randomobject"><img src="./images/object-palm.png" alt=""></li>
+                    <li class="object objecttetris randomobject"><img src="./images/object-tetris.png" alt=""></li>
+                    <li class="object objectbart randomobject"><img src="./images/object-bart.png" alt=""></li>
+                    <li class="object objecttesla randomobject"><img src="./images/object-tesla.png" alt=""></li>
+                </ul><!-- /.object-gallery -->
             </div><!-- /.album canvas -->
            
-            <div class="albumTitle object"></div>
-            <ul id="draggable" class="object-gallery">
-                <li class="object objectsun randomobject"><img src="./images/object-sun.png" alt=""></li>
-                <li class="object objectbust randomobject"><img src="./images/object-bust.png" alt=""></li>
-                <li class="object objectpalm randomobject"><img src="./images/object-palm.png" alt=""></li>
-                <li class="object objecttetris randomobject"><img src="./images/object-tetris.png" alt=""></li>
-                <li class="object objectbart randomobject"><img src="./images/object-bart.png" alt=""></li>
-                <li class="object objecttesla randomobject"><img src="./images/object-tesla.png" alt=""></li>
-            </ul><!-- /.object-gallery -->
         </main>
 
        
@@ -107,8 +108,8 @@
                 <h3 class="selector-title">Album Title</h3>
                 <div class="option option-title">
                     
-                    <p class="random-title">Select a random name for me:</p>
-                    <button type="submit" id="randomTitle" class="generate" value="Vaporize It">Vaporize it</button>
+                    <!-- <p class="random-title">Select a random name for me:</p> -->
+                    <button type="submit" id="randomTitle" class="generate" value="Vaporize It">Random name</button>
                             
                     <span>OR</span>
                         

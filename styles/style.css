@@ -416,7 +416,7 @@ button, input, select, textarea {
   margin-bottom: 20px; }
 
 #custom-title, #randomTitle {
-  width: 70%;
+  width: 50%;
   background: #0ff;
   color: #010511;
   display: block;
